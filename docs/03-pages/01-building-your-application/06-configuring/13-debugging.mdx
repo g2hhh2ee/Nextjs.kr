@@ -82,6 +82,7 @@ Debugger listening on ws://127.0.0.1:9229/0cf90313-350d-4466-a748-cd60f4e47c95
 For help, see: https://nodejs.org/en/docs/inspector
 ready - started server on 0.0.0.0:3000, url: http://localhost:3000
 ```
+
 > `NODE_OPTIONS='--inspect' npm run dev` 또는 `NODE_OPTIONS='--inspect' yarn dev`를 실행하면 작동하지 않으므로 주의하세요. 이것은 동일한 포트에서 여러 디버거를 실행하려고 합니다. 하나는 npm/yarn 프로세스용이고 다른 하나는 Next.js용 입니다. 그러면 콘솔에 `127.0.0.1:9229 에서 인스펙터 시작 실패. 이미 사용중인 주소`와 같은 오류가 표시됩니다.
 
 서버가 시작되면 크롬에서 새 탭을 열고 `chrome://inspect`를 방문하면 **원격 대상** 섹션에 Next.js 애플리케이션이 표시됩니다. 애플리케이션 아래에서 **검사**를 클릭하여 별도의 개발자 도구 창을 연 다음 **소스** 탭으로 이동합니다.
@@ -102,7 +103,7 @@ ready - started server on 0.0.0.0:3000, url: http://localhost:3000
 
 `cross-env`는 사용 중인 플랫폼(맥, 리눅스, 윈도우)에 관계없이 `NODE_OPTIONS` 환경 변수를 설정하여 여러 장치와 운영 체제에서 일관되게 디버깅 할 수 있도록 해줍니다.
 
-> **참고**: 컴퓨터에서 윈도우 방화벽이 비활성화 되어있는지 확인하세요. 이 외부 서비스는 `next dev`에서 더욱 빠른 새로고침이 가능한 _모든 파일 읽기_를 확인합니다. 이는 Next.js와 관련이 없는 문제이지만 Next.js 개발에 영향을 미칩니다.
+> **참고**: 컴퓨터에서 윈도우 방화벽이 비활성화 되어있는지 확인하세요. 이 외부 서비스는 `next dev`에서 더욱 빠른 새로고침이 가능한 *모든 파일 읽기*를 확인합니다. 이는 Next.js와 관련이 없는 문제이지만 Next.js 개발에 영향을 미칩니다.
 
 ## 추가 정보
 

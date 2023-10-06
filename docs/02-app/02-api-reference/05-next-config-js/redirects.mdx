@@ -225,7 +225,7 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/with-basePath', // 자동으로 /docs/with-basePath가 됩니다. 
+        source: '/with-basePath', // 자동으로 /docs/with-basePath가 됩니다.
         destination: '/another', // 자동으로 becomes /docs/another가 됩니다.
         permanent: false,
       },
@@ -243,7 +243,7 @@ module.exports = {
 
 ### i18n 기능과 함께 사용하는 리다이렉트 활용
 
-리다이렉트와 함께 [`i18n` support](/docs/pages/building-your-application/routing/internationalization) 지원을 활용할 때는 `source`와 `destination`이 자동으로 구성된 `locales`을 처리하기 위해 접두사로 추가됩니다. 
+리다이렉트와 함께 [`i18n` support](/docs/pages/building-your-application/routing/internationalization) 지원을 활용할 때는 `source`와 `destination`이 자동으로 구성된 `locales`을 처리하기 위해 접두사로 추가됩니다.
 
 ```js filename="next.config.js"
 module.exports = {
